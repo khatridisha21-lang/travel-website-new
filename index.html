@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div id="loader">
+
+  <h1>TravelWithMe 🌍</h1>
+  
+
+</div>
+
+  <p> wait for a moment...</p>
+
+</div>
+
+  <title>Travel With Me 🌍</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="welcome">
+
+  <div class="overlay">
+    <h1>Uncover India’s Hidden Gems 🌍 </h1>
+    <p>Find the best places to visit anytime of the year</p>
+
+    <a href="login.html">
+      <button>Explore Now ➤</button>
+    </a>
+  </div>
+<button onclick="topFunction()" id="topBtn">⬆</button>
+
+<script>
+
+let mybutton = document.getElementById("topBtn");
+
+window.onscroll = function() {
+
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+
+    mybutton.style.display = "block";
+
+  } else {
+
+    mybutton.style.display = "none";
+
+  }
+
+};
+
+function topFunction() {
+
+  document.body.scrollTop = 0;
+
+  document.documentElement.scrollTop = 0;
+
+}
+
+</script>
+
+<script>
+
+window.onload = function() {
+
+  setTimeout(function() {
+
+    document.getElementById("loader").style.display = "none";
+
+  }, 2000);
+
+};
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
